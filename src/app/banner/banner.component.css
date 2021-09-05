@@ -1,0 +1,6 @@
+.banner-section {
+    background: url("../../assets/biking.jpeg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 0 0 0 20%;
+}

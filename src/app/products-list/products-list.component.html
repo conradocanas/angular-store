@@ -1,0 +1,34 @@
+<section class="products-section">
+  <div class="container">
+    <h2>Nuestros productos</h2>
+    <div class="row">
+      <div
+        *ngFor="let product of products"
+        class="col-12 col-lg-4 col-md-6 pt-4"
+      >
+        <div class="card">
+          <img src="../../assets/biking.jpeg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">{{ product.title }}</h5>
+            <p class="card-text">
+              {{ product.description }}
+            </p>
+            <div class="d-flex justify-content-end">
+              <h4 class="display-6">{{ product.price | currency }}</h4>
+            </div>
+          </div>
+          <div class="d-grid">
+            <button
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasNavbar"
+              aria-controls="offcanvasNavbar"
+              class="btn btn-primary btn-block"
+            >
+              Agregar al carrito
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
